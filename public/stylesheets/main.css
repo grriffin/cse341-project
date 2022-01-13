@@ -41,3 +41,9 @@
   width: 5rem;
   height: 5rem;
 }
+
+.error {
+  background-color: #c7776e;
+  color: white;
+  padding: 0.5rem;
+}
