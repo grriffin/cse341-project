@@ -24,6 +24,10 @@ const ta02Routes = require('./routes/ta02');
 const ta03Routes = require('./routes/ta03');
 const ta04Routes = require('./routes/ta04');
 
+const MONGODB_URL =
+  process.env.MONGODB_URL ||
+  'mongodb+srv://griffin:VWacZ9wBs5egC2df@cs341.3h2lc.mongodb.net/team?retryWrites=true&w=majority';
+
 app
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
