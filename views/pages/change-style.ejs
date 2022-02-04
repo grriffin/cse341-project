@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../includes/header.ejs %>
+  </head>
+
+  <body>
+    <% include ../includes/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1><%= title %></h1>
+        <form id="change-style-form" action="change-style" method="POST">
+          <label for="style">Style</label>
+          <select id="style" name="style">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          <button type="submit">Set Style</button>
+        </form>
+      </div>
+    </div>
+    <div class="container"></div>
+  </body>
+</html>
